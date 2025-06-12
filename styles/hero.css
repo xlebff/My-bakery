@@ -1,0 +1,26 @@
+.hero {
+    background: linear-gradient(to bottom, rgba(139, 69, 19, 0), rgb(68, 34, 10)), url(../images/backgrounds/background0.jpg) no-repeat center bottom / cover;
+    height: 500px;
+    width: 100%;
+    z-index: -1;
+    color: #f0f0f0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.hero__title {
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: 0;
+    font-size: 65px;
+    padding: 30px 10%;
+}
+
+.hero__subtitle {
+    font-size: 20px;
+    width: 100%;
+    margin-top: 0;
+    padding-inline: 10%;
+}
