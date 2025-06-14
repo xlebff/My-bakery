@@ -1,38 +1,85 @@
-.rye-middle {
+.rye-bread {
+    margin-block: 80px;
+    padding-top: 80px;
+    gap: 30px;
     display: flex;
+    flex-wrap: wrap;
 }
 
-.rye-middle__types {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(1fr, 3);
-    grid-template-rows: repeat(1fr, 3);
+.top-rye-bread-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-inline: 8%;
 }
 
-.rye-middle__element {
-    border: solid;
-}
-
-.rye-middle__icon {
-    width: 100%;
-    height: 80%;
+.rye-bread__icon {
+    margin: 0;
+    max-width: 300px;
+    width: 40%;
+    height: 300px;
     overflow: hidden;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.rye-middle__icon img {
+.rye-bread__icon img {
     width: 100%;
     height: auto;
+    border-radius: 8px;
     object-fit: cover;
 }
 
-.rye-middle__title {
-
+.top-rye-bread__info-container {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.rye-middle__description {
-
+.top-rye-bread__title {
+    font-size: 30px;
 }
 
-#rye-first {
+.top-rye-bread__info {
+    text-align: justify;
+}
 
-} 
+.middle-rye-bread-container {
+    width: 100%;
+}
+
+.middle-rye-bread__title {
+    text-align: center;
+}
+
+.middle-rye-bread__types {
+    display: flex;
+    justify-content: center;
+    padding-inline: 8%;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+
+.middle-rye-bread__element {
+    height: 500px;
+    width: 500px;
+    text-align: center;
+}
+
+.middle-rye-bread__icon {
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+    margin: 0;
+    border-radius: 8px;
+}
+
+.middle-rye-bread__icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

@@ -1,5 +1,5 @@
 .hero {
-    background: linear-gradient(to bottom, rgba(139, 69, 19, 0), rgb(68, 34, 10)), url(../images/backgrounds/background0.jpg) no-repeat center bottom / cover;
+    background: linear-gradient(to bottom, rgba(139, 69, 19, 0), rgb(68, 34, 10)), url(../images/backgrounds/background.jpg) no-repeat center bottom / cover;
     height: 500px;
     width: 100%;
     z-index: -1;
