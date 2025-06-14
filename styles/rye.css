@@ -98,20 +98,6 @@
     .rye-bread__icon {
         height: 250px;
     }
-    
-    .middle-rye-bread__circles {
-        flex-wrap: wrap;
-        gap: 30px;
-    }
-    
-    .middle-rye-bread__circle__icon {
-        width: 120px;
-        height: 120px;
-    }
-
-    .middle-rye-bread__circles__element {
-        align-items: center;
-    }
 }
 
 @media (max-width: 768px) {
@@ -133,32 +119,6 @@
     .top-rye-bread__title {
         font-size: 24px;
     }
-    
-    .middle-rye-bread-container {
-        padding-inline: 5%;
-    }
-    
-    .middle-rye-bread__info-container {
-        margin-inline: 0;
-    }
-    
-    .middle-rye-bread__circles {
-        justify-content: center;
-    }
-    
-    .middle-rye-bread__circle__icon {
-        width: 100px;
-        height: 100px;
-    }
-    
-    .lower-rye-bread-container {
-        max-width: 95%;
-    }
-    
-    .lower-rye-bread__scroll-element {
-        width: 160px;
-        height: 120px;
-    }
 }
 
 @media (max-width: 480px) {
@@ -170,28 +130,8 @@
     .top-rye-bread__title {
         font-size: 20px;
     }
-    
-    .middle-rye-bread__circles__element {
-        flex: 0 0 100%;
-        margin-bottom: 20px;
-    }
-    
-    .middle-rye-bread__circle__icon {
-        width: 150px;
-        height: 150px;
-    }
-    
-    .lower-rye-bread__scroll-element {
-        width: 140px;
-        height: 100px;
-    }
-    
-    .lower-rye-bread__scroll-element__title {
-        font-size: 14px;
-    }
 }
 
-/* Дополнительные улучшения для очень маленьких экранов */
 @media (max-width: 360px) {
     .rye-bread__icon {
         height: 200px;
