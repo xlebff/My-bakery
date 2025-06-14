@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="styles/white.css">
     <link rel="stylesheet" href="styles/rye.css">
     <link rel="stylesheet" href="styles/fade-in.css">
+    <link rel="stylesheet" href="styles/tabs.css">
+    <link rel="stylesheet" href="styles/menu.css">
 </head>
 <body>
     <header>
@@ -30,9 +32,10 @@
             </div>
 
             <ul class="header-navbar__list fade-in-left">
-                <li class="header-navbar__element"><a href="#white">Белый хлеб</a></li>
-                <li class="header-navbar__element"><a href="#rye">Ржаной хлеб</a></li>
-                <li class="header-navbar__element"><a href="#about">О нас</a></li>
+                <li class="header-navbar__element"><a href="#" data-tab="bread">Наш хлеб</a></li>
+                <li class="header-navbar__element"><a href="#" data-tab="menu">Меню</a></li>
+                <li class="header-navbar__element"><a href="#" data-tab="about">О нас</a></li>
+                <li class="header-navbar__element"><a href="#" data-tab="contacts">Контакты</a></li>
             </ul>
         </nav>
 
@@ -43,126 +46,190 @@
     </header>
 
     <main>
-        <section class="white-bread" id="white">
-            <section class="fade-in top-white-bread-container">
-                <figure class="white-bread__icon">
-                    <img src="images/breads/white.jpg">
-                </figure>
-                <section class="top-white-bread__info-container">
-                    <h3 class="top-white-bread__title">Белый хлеб — нежная классика с богатой историей</h3>
-                    <p class="top-white-bread__info">Белый хлеб — один из самых любимых и распространённых видов хлеба в мире. Его воздушный мякиш, тонкая золотистая корочка и мягкий, слегка сладковатый вкус покорили миллионы людей.</p>
-                    <p class="top-white-bread__info">Белый хлеб появился ещё в Древнем Египте, где научились делать муку тонкого помола. В отличие от грубого ржаного или ячменного хлеба, он считался продуктом для знати и был символом достатка. В Древней Греции и Риме белый хлеб подавали на пирах, а в Средние века он оставался привилегией богатых слоёв населения.</p>
+        <section class="tab-content active" id="bread-tab">
+            <section class="white-bread" id="white">
+                <section class="fade-in top-white-bread-container">
+                    <figure class="white-bread__icon">
+                        <img src="images/breads/white.jpg">
+                    </figure>
+                    <section class="top-white-bread__info-container">
+                        <h3 class="top-white-bread__title">Белый хлеб — нежная классика с богатой историей</h3>
+                        <p class="top-white-bread__info">Белый хлеб — один из самых любимых и распространённых видов хлеба в мире. Его воздушный мякиш, тонкая золотистая корочка и мягкий, слегка сладковатый вкус покорили миллионы людей.</p>
+                        <p class="top-white-bread__info">Белый хлеб появился ещё в Древнем Египте, где научились делать муку тонкого помола. В отличие от грубого ржаного или ячменного хлеба, он считался продуктом для знати и был символом достатка. В Древней Греции и Риме белый хлеб подавали на пирах, а в Средние века он оставался привилегией богатых слоёв населения.</p>
+                    </section>
+                </section>
+
+                <section class="middle-white-bread-container">
+                    <section class="fade-in middle-white-bread__info-container">
+                        <h3 class="middle-white-bread__title">Чем отличается настоящий белый хлеб?</h3>
+                        <p class="middle-white-bread__info">К сожалению, многие современные производители заменяют традиционные технологии ускоренными методами, добавляя разрыхлители, консерванты и улучшители. Настоящий белый хлеб должен быть:</p>
+                    </section>
+
+                    <section class="fade-in-right-top middle-white-bread__circles">
+                        <article class="middle-white-bread__circles__element">
+                            <figure class="middle-white-bread__circle__icon">
+                                <img src="images/ingredients/floar.jpg" class="middle-white-bread__circle__icon_wide">
+                            </figure>
+                            <p class="middle-white-bread__circle__description">Из муки высшего сорта</p>
+                        </article>
+
+                        <article class="middle-white-bread__circles__element">
+                            <figure class="middle-white-bread__circle__icon">
+                                <img src="images/ingredients/sourdough.jpg" class="middle-white-bread__circle__icon_long">
+                            </figure>
+                            <p class="middle-white-bread__circle__description">На натуральной закваске или дрожжах</p>
+                        </article>
+
+                        <article class="middle-white-bread__circles__element">
+                            <figure class="middle-white-bread__circle__icon">
+                                <img src="images/ingredients/baking.jpg" class="middle-white-bread__circle__icon_long">
+                            </figure>
+                            <p class="middle-white-bread__circle__description">С правильной выпечкой</p>
+                        </article>
+                    </section>
+                </section>
+
+                <section class="fade-in lower-white-bread-container">
+                    <h3 class="lower-white-bread__title">Виды белого хлеба</h3>
+                    <div class="lower-white-bread__scroll-container">
+                        <div class="lower-white-bread__scroll-content">
+                            <article class="lower-white-bread__scroll-element" id="wheat">
+                                <p class="lower-white-bread__scroll-element__title">Пшеничный</p>
+                            </article>
+
+                            <article class="lower-white-bread__scroll-element" id="baguette">
+                                <p class="lower-white-bread__scroll-element__title">Французский багет</p>
+                            </article>
+
+                            <article class="lower-white-bread__scroll-element" id="ciobatta">
+                                <p class="lower-white-bread__scroll-element__title">Итальянская чиабатта</p>
+                            </article>
+
+                            <article class="lower-white-bread__scroll-element" id="brioche">
+                                <p class="lower-white-bread__scroll-element__title">Бриошь</p>
+                            </article>
+
+                            <article class="lower-white-bread__scroll-element" id="lavash">
+                                <p class="lower-white-bread__scroll-element__title">Армянский лаваш</p>
+                            </article>
+                        </div>
+                    </div>
                 </section>
             </section>
 
-            <section class="middle-white-bread-container">
-                <section class="fade-in middle-white-bread__info-container">
-                    <h3 class="middle-white-bread__title">Чем отличается настоящий белый хлеб?</h3>
-                    <p class="middle-white-bread__info">К сожалению, многие современные производители заменяют традиционные технологии ускоренными методами, добавляя разрыхлители, консерванты и улучшители. Настоящий белый хлеб должен быть:</p>
+            <section class="rye-bread" id="rye">
+                <section class="fade-in top-rye-bread-container">
+                    <figure class="rye-bread__icon">
+                        <img src="images/breads/rye.jpg">
+                    </figure>
+                    <section class="top-rye-bread__info-container">
+                        <h3 class="top-rye-bread__title">Ржаной хлеб: насыщенный вкус и польза для здоровья</h3>
+                        <p class="top-rye-bread__info">Ржаной хлеб — настоящий символ русской кухни и один из самых полезных видов хлеба в мире. Его насыщенный тёмный цвет, плотная мякоть и характерный кисловато-пряный вкус делают его незаменимым на любом столе. Но за внешней простотой скрывается многовековая история, особая технология приготовления и уникальные полезные свойства.</p>
+                        <p class="top-rye-bread__info">Благодаря клетчатке, ржаной хлеб улучшает пищеварение, снижает уровень холестерина и помогает контролировать сахар в крови. Он богат витаминами группы B, магнием и цинком.</p>
+                    </section>
                 </section>
 
-                <section class="fade-in-right-top middle-white-bread__circles">
-                    <article class="middle-white-bread__circles__element">
-                        <figure class="middle-white-bread__circle__icon">
-                            <img src="images/ingredients/floar.jpg" class="middle-white-bread__circle__icon_wide">
-                        </figure>
-                        <p class="middle-white-bread__circle__description">Из муки высшего сорта</p>
-                    </article>
+                <section class="middle-rye-bread-container">
+                    <h3 class="middle-rye-bread__title fade-in">Виды ржаного хлеба</h3>
 
-                    <article class="middle-white-bread__circles__element">
-                        <figure class="middle-white-bread__circle__icon">
-                            <img src="images/ingredients/sourdough.jpg" class="middle-white-bread__circle__icon_long">
-                        </figure>
-                        <p class="middle-white-bread__circle__description">На натуральной закваске или дрожжах</p>
-                    </article>
+                    <section class="middle-rye-bread__types">
+                        <article class="fade-in-right middle-rye-bread__element">
+                            <figure class="middle-rye-bread__icon">
+                                <img src="images/rye_breads/pure.jpg">
+                            </figure>
+                            <p class="middle-rye-bread__name">Чистый ржаной (100% рожь)</p>
+                            <p class="middle-rye-bread__description">Очень плотный, тёмный, с выраженной кислинкой.</p>
+                        </article>
 
-                    <article class="middle-white-bread__circles__element">
-                        <figure class="middle-white-bread__circle__icon">
-                            <img src="images/ingredients/baking.jpg" class="middle-white-bread__circle__icon_long">
-                        </figure>
-                        <p class="middle-white-bread__circle__description">С правильной выпечкой</p>
-                    </article>
+                        <article class="fade-in-right middle-rye-bread__element">
+                            <figure class="middle-rye-bread__icon">
+                                <img src="images/rye_breads/rye-wheat.jpg">
+                            </figure>
+                            <p class="middle-rye-bread__name">Ржано-пшеничный (70% ржи + 30% пшеницы)</p>
+                            <p class="middle-rye-bread__description">Более мягкий, но сохраняет характерный вкус.</p>
+                        </article>
+
+                        <article class="fade-in-left middle-rye-bread__element">
+                            <figure class="middle-rye-bread__icon">
+                                <img src="images/rye_breads/custard-rye.jpg">
+                            </figure>
+                            <p class="middle-rye-bread__name">Заварной (с солодом)</p>
+                            <p class="middle-rye-bread__description">Тесто частично заваривают кипятком для сладковатого привкуса.</p>
+                        </article>
+
+                        <article class="fade-in-left middle-rye-bread__element">
+                            <figure class="middle-rye-bread__icon">
+                                <img src="images/rye_breads/ruislimp.jpg">
+                            </figure>
+                            <p class="middle-rye-bread__name">Финский "Руйслимппу"</p>
+                            <p class="middle-rye-bread__description">Плоский, круглый, с отверстием в центре. Очень долго хранится.</p>
+                        </article>
+                    </section>
                 </section>
             </section>
+        </section>
 
-            <section class="fade-in lower-white-bread-container">
-                <h3 class="lower-white-bread__title">Виды белого хлеба</h3>
-                <div class="lower-white-bread__scroll-container">
-                    <div class="lower-white-bread__scroll-content">
-                        <article class="lower-white-bread__scroll-element" id="wheat">
-                            <p class="lower-white-bread__scroll-element__title">Пшеничный</p>
-                        </article>
+        <div class="tab-content" id="menu-tab">
+            <section class="menu">
+                <h2 class="menu__title">Наше меню</h2>
+                
+                <div class="menu__categories">
+                    <button class="menu__category-btn active" data-category="bread">Хлеб</button>
+                    <button class="menu__category-btn" data-category="pastry">Выпечка</button>
+                    <button class="menu__category-btn" data-category="desserts">Десерты</button>
+                    <button class="menu__category-btn" data-category="drinks">Напитки</button>
+                </div>
 
-                        <article class="lower-white-bread__scroll-element" id="baguette">
-                            <p class="lower-white-bread__scroll-element__title">Французский багет</p>
-                        </article>
+                <div class="menu__items-container">
+                    <!-- Хлеб -->
+                    <div class="menu__category active" id="bread-category">
+                        <div class="menu__item">
+                            <img src="images/menu/baguette.jpg" alt="Багет">
+                            <h3>Французский багет</h3>
+                            <p>Классический хрустящий багет</p>
+                            <span>120 ₽</span>
+                        </div>
+                        <!-- Добавьте другие виды хлеба -->
+                    </div>
 
-                        <article class="lower-white-bread__scroll-element" id="ciobatta">
-                            <p class="lower-white-bread__scroll-element__title">Итальянская чиабатта</p>
-                        </article>
+                    <!-- Выпечка -->
+                    <div class="menu__category" id="pastry-category">
+                        <div class="menu__item">
+                            <img src="images/menu/croissant.jpg" alt="Круассан">
+                            <h3>Круассан</h3>
+                            <p>Слоёное тесто с маслом</p>
+                            <span>150 ₽</span>
+                        </div>
+                        <!-- Добавьте другие виды выпечки -->
+                    </div>
 
-                        <article class="lower-white-bread__scroll-element" id="brioche">
-                            <p class="lower-white-bread__scroll-element__title">Бриошь</p>
-                        </article>
+                    <!-- Десерты -->
+                    <div class="menu__category" id="desserts-category">
+                        <!-- Добавьте десерты -->
+                    </div>
 
-                        <article class="lower-white-bread__scroll-element" id="lavash">
-                            <p class="lower-white-bread__scroll-element__title">Армянский лаваш</p>
-                        </article>
+                    <!-- Напитки -->
+                    <div class="menu__category" id="drinks-category">
+                        <!-- Добавьте напитки -->
                     </div>
                 </div>
             </section>
-        </section>
+        </div>
 
-        <section class="rye-bread" id="rye">
-            <section class="fade-in top-rye-bread-container">
-                <figure class="rye-bread__icon">
-                    <img src="images/breads/rye.jpg">
-                </figure>
-                <section class="top-rye-bread__info-container">
-                    <h3 class="top-rye-bread__title">Ржаной хлеб: насыщенный вкус и польза для здоровья</h3>
-                    <p class="top-rye-bread__info">Ржаной хлеб — настоящий символ русской кухни и один из самых полезных видов хлеба в мире. Его насыщенный тёмный цвет, плотная мякоть и характерный кисловато-пряный вкус делают его незаменимым на любом столе. Но за внешней простотой скрывается многовековая история, особая технология приготовления и уникальные полезные свойства.</p>
-                    <p class="top-rye-bread__info">Благодаря клетчатке, ржаной хлеб улучшает пищеварение, снижает уровень холестерина и помогает контролировать сахар в крови. Он богат витаминами группы B, магнием и цинком.</p>
-                </section>
+        <div class="tab-content" id="about-tab">
+            <section class="about">
+                <h2>О нашей пекарне</h2>
+                <!-- Добавьте содержимое -->
             </section>
+        </div>
 
-            <section class="middle-rye-bread-container">
-                <h3 class="middle-rye-bread__title fade-in">Виды ржаного хлеба</h3>
-
-                <section class="middle-rye-bread__types">
-                    <article class="fade-in-right middle-rye-bread__element">
-                        <figure class="middle-rye-bread__icon">
-                            <img src="images/rye_breads/pure.jpg">
-                        </figure>
-                        <p class="middle-rye-bread__name">Чистый ржаной (100% рожь)</p>
-                        <p class="middle-rye-bread__description">Очень плотный, тёмный, с выраженной кислинкой.</p>
-                    </article>
-
-                    <article class="fade-in-right middle-rye-bread__element">
-                        <figure class="middle-rye-bread__icon">
-                            <img src="images/rye_breads/rye-wheat.jpg">
-                        </figure>
-                        <p class="middle-rye-bread__name">Ржано-пшеничный (70% ржи + 30% пшеницы)</p>
-                        <p class="middle-rye-bread__description">Более мягкий, но сохраняет характерный вкус.</p>
-                    </article>
-
-                    <article class="fade-in-left middle-rye-bread__element">
-                        <figure class="middle-rye-bread__icon">
-                            <img src="images/rye_breads/custard-rye.jpg">
-                        </figure>
-                        <p class="middle-rye-bread__name">Заварной (с солодом)</p>
-                        <p class="middle-rye-bread__description">Тесто частично заваривают кипятком для сладковатого привкуса.</p>
-                    </article>
-
-                    <article class="fade-in-left middle-rye-bread__element">
-                        <figure class="middle-rye-bread__icon">
-                            <img src="images/rye_breads/ruislimp.jpg">
-                        </figure>
-                        <p class="middle-rye-bread__name">Финский "Руйслимппу"</p>
-                        <p class="middle-rye-bread__description">Плоский, круглый, с отверстием в центре. Очень долго хранится.</p>
-                    </article>
-                </section>
+        <!-- Вкладка "Контакты" -->
+        <div class="tab-content" id="contacts-tab">
+            <section class="contacts">
+                <h2>Наши контакты</h2>
+                <!-- Добавьте содержимое -->
             </section>
-        </section>
+        </div>
     </main>
 
     <footer class="footer" id="about">
@@ -210,6 +277,8 @@
     <script src="scripts/load.js"></script>
     <script src="scripts/fade-in.js"></script>
     <script src="scripts/burger.js"></script>
+    <script src="scripts/tabs.js"></script>
+    <script src="scripts/menu.js"></script>
 
 </body>
 </html>
