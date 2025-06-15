@@ -10,9 +10,12 @@ body {
     color: #333;
     transition: background-color 0.3s ease, color 0.3s ease;
     font-size: 18px;
-    cursor: url("../images/bread.png"), url("../../wheat.png"), auto;
+    cursor: url("../images/wheat.png"), auto;
 }
 
+a {
+    cursor: url("../images/bread.png"), auto;
+}
 header {
     display: flex;
     flex-wrap: wrap;

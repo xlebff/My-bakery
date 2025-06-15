@@ -107,7 +107,7 @@
 .middle-white-bread__circle__icon:hover,
 .middle-white-bread__circle__icon:hover ~ .middle-bread__circle__description {
     transform: scale(1.05);
-    cursor: pointer;
+    cursor: url("../images/bread.png"), auto;
 }
 
 .lower-white-bread-container {
@@ -169,7 +169,7 @@
 
 .lower-white-bread__scroll-element:hover {
     transform: scale(1.05);
-    cursor: pointer;
+    cursor: url("../images/bread.png"), auto;
 }
 
 .lower-white-bread__scroll-element:last-child {
