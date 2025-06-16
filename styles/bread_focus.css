@@ -6,6 +6,7 @@
     margin-block: 50px;
     gap: 30px;
     margin-inline: 5%; 
+    height: 400px;
 }
 
 .bread__info {
@@ -21,6 +22,7 @@
     max-width: 50%;
     margin: 0;
     border-radius: 8px;
+    object-fit: cover;
 }
 
 .bread__icon img {
@@ -30,15 +32,22 @@
 @media (max-width: 720px) {
     .bread {
         flex-wrap: wrap;
+        height: auto;
     }
-
+    
     .bread__info {
         max-width: 100%;
         text-align: center;
     }
-
+    
     .bread__icon {
         max-width: 100%;
+        flex: 1;
         max-height: 300px;
+    }
+    
+    .bread__icon img {
+        width: 100%;
+        height: auto;
     }
 }
