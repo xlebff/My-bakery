@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="styles/fade-in.css">
     <link rel="stylesheet" href="styles/tabs.css">
     <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="styles/bread_focus.css">
 </head>
 <body>
     <header>
@@ -38,86 +39,31 @@
     </header>
 
     <main>
-        <div class="tab-content" id="menu-tab">
-            <section class="menu">
-                <h2 class="menu__title">Наше меню</h2>
-                
-                <div class="menu__categories">
-                    <button class="menu__category-btn active" data-category="bread">Хлеб</button>
-                    <button class="menu__category-btn" data-category="pastry">Выпечка</button>
-                    <button class="menu__category-btn" data-category="desserts">Десерты</button>
-                    <button class="menu__category-btn" data-category="drinks">Напитки</button>
-                </div>
-
-                <div class="menu__items-container">
-                    <div class="menu__category active" id="bread-category">
-                        <div class="menu__item">
-                            <img src="images/white_breads/wheat-bread.jpg" alt="Багет">
-                            <h3>Пшеничный</h3>
-                            <p>Классический хрустящий багет</p>
-                            <span>120 ₽</span>
-                        </div>
-                        <div class="menu__item">
-                            <img src="images/white_breads/french-baguette.jpg" alt="Багет">
-                            <h3>Французский багет</h3>
-                            <p>Классический хрустящий багет</p>
-                            <span>120 ₽</span>
-                        </div>
-                        <div class="menu__item">
-                            <img src="images/white_breads/italian-ciobatta.jpg" alt="Багет">
-                            <h3>Итальянская чиабатта</h3>
-                            <p>Классический хрустящий багет</p>
-                            <span>120 ₽</span>
-                        </div>
-                        <div class="menu__item">
-                            <img src="images/white_breads/brioche.jpg" alt="Багет">
-                            <h3>Бриошь</h3>
-                            <p>Классический хрустящий багет</p>
-                            <span>120 ₽</span>
-                        </div>
-                        <div class="menu__item">
-                            <img src="images/white_breads/armenian-lavash.jpg" alt="Багет">
-                            <h3>Армянский лаваш</h3>
-                            <p>Классический хрустящий багет</p>
-                            <span>120 ₽</span>
-                        </div>
-                        <div class="menu__item">
-                            <img src="images/rye_breads/pure.jpg" alt="Багет">
-                            <h3>Ржаной</h3>
-                            <p>Классический хрустящий багет</p>
-                            <span>120 ₽</span>
-                        </div>
-                        <div class="menu__item">
-                            <img src="images/rye_breads/rye-wheat.jpg" alt="Багет">
-                            <h3>Ржано-пшеничный</h3>
-                            <p>Классический хрустящий багет</p>
-                            <span>120 ₽</span>
-                        </div>
-                        <div class="menu__item">
-                            <img src="images/rye_breads/custard-rye.jpg" alt="Багет">
-                            <h3>Заварной (с солодом)</h3>
-                            <p>Классический хрустящий багет</p>
-                            <span>120 ₽</span>
-                        </div>
-                        <div class="menu__item">
-                            <img src="images/rye_breads/ruislimp.jpg" alt="Багет">
-                            <h3>Финский "Руйслимппу"</h3>
-                            <p>Классический хрустящий багет</p>
-                            <span>120 ₽</span>
-                        </div>
-
-                    </div>
+        <section class="bread">
+            <section class="bread__info">
+                <h3 class="bread__title">Пшеничный хлеб</h3>
+                <p class="bread__description">Мягкий, воздушный хлеб из пшеничной муки с золотистой корочкой. Имеет нежный вкус и универсален в употреблении. Свежий, без добавок, подходит для бутербродов и тостов.</p>
+                <p class="bread__status">КБЖУ (на 100 г):</p>
+                <p class="bread__kkal">Калории: ~265 ккал</p>
+                <p class="bread__protein">Белки: ~8 г</p>
+                <p class="bread__fats">Жиры: ~3 г</p>
+                <p class="bread__carb">Углеводы: ~50 г</p>
+                <p class="bread__price">Цена: 120</p>
             </section>
-        </div>
+            <figure class="bread__icon">
+                <img src="images/white_breads/wheat-bread.jpg">
+            </figure>
+        </section>
 
-        <h2 style="text-align: center; color: firebrick; font-size: 48px;">Где нас найти?</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2709.4891263667!2d39.71348831594329!3d47.222847723332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e3b9c8b8e7a0a1%3A0x7d7b8e7a0a1b8e7a!2z0JrQvtC70LvQtdC00LYg0YHQvtC70L7QttC10L3QuNGPINGW0LzQtdC90LrQuCDQuCDQuNC90YLQtdGA0L3QtdGC0YMgKNCy0LDRgNC40LDQvdGC0LAp!5e0!3m2!1sru!2sru!4v1620000000000!5m2!1sru!2sru" 
-                            width="100%" 
-                            height="450" 
-                            style="border:0;" 
-                            allowfullscreen="" 
-                            loading="lazy">
-        </iframe>
+        <section class="map">
+            <h2 style="text-align: center; color: firebrick; font-size: 30px;">Где нас найти?</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2709.4891263667!2d39.71348831594329!3d47.222847723332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e3b9c8b8e7a0a1%3A0x7d7b8e7a0a1b8e7a!2z0JrQvtC70LvQtdC00LYg0YHQvtC70L7QttC10L3QuNGPINGW0LzQtdC90LrQuCDQuCDQuNC90YLQtdGA0L3QtdGC0YMgKNCy0LDRgNC40LDQvdGC0LAp!5e0!3m2!1sru!2sru!4v1620000000000!5m2!1sru!2sru" 
+                                width="100%" 
+                                height="450" 
+                                allowfullscreen="" 
+                                loading="lazy">
+            </iframe>
+        </section>
     </main>
 
     <footer class="footer" id="about">

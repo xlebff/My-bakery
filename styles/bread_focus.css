@@ -1,0 +1,54 @@
+.bread {
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+    padding: 2%;
+    margin-block: 50px;
+    gap: 30px;
+    margin-inline: 5%; 
+}
+
+.bread__info {
+    max-width: 50%;
+}
+
+.bread__price {
+    align-self: flex-end;
+}
+
+.bread__icon {
+    overflow: hidden;
+    max-width: 50%;
+    margin: 0;
+    border-radius: 8px;
+}
+
+.bread__icon img {
+    margin: 0;
+}
+
+@media (max-width: 720px) {
+    .bread {
+        flex-wrap: wrap;
+    }
+    
+    .bread__info {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .bread__icon {
+        max-width: 100%;
+        max-height: 300px;
+    }
+}
+
+.map {
+    padding-inline: 5%; 
+}
+
+.map iframe {
+    border: solid 2px firebrick; 
+    border-radius: 8px; 
+    overflow: hidden;
+}
