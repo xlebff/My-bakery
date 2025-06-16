@@ -1,0 +1,11 @@
+.map {
+    padding-inline: 5%;
+    max-width: 1300px;
+    margin-inline: auto;
+}
+
+.map iframe {
+    border: solid 2px firebrick; 
+    border-radius: 8px; 
+    overflow: hidden;
+}
